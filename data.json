@@ -1,6 +1,6 @@
 {
     "male": {
-        "name" : "Đại Phong",
+        "name" : "Quân Đực",
         "birthDay" : {
             "d" : 0,
             "m" : 0,
@@ -8,7 +8,7 @@
         }
     },
     "female" : {
-        "name" : "Quân kia đéo biết tên",
+        "name" : "Quân Cái",
         "birthDay" : {
             "d" : 0,
             "m" : 0,
@@ -17,9 +17,9 @@
     },
     "dataDay" : {
         "day" :  {
-            "d" : 0,
-            "m" : 0,
-            "y" : 1990 
+            "d" : 13,
+            "m" : 11,
+            "y" : 2018
         }
     }
 }

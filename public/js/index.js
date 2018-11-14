@@ -6,10 +6,20 @@ document.addEventListener('DOMContentLoaded', function () {
     var min = document.querySelector('.min');
     var seconds = document.querySelector('.second');
   
+    console.log();
+
+    function convertDateToUTC(date) { 
+      return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds()); 
+    }
+
     function showDate() {
-      let ani = new Date(1998, 3, 8);
+      let ani = convertDateToUTC(new Date("2018-11-13"))
       let now = new Date();
+      console.log(now, ani, now - ani);
+
+      
       let date = Math.floor((now - ani) / 1000 / 60 / 60 / 24);
+
       innerDate.innerHTML = date;
       setTimeout(showDate, 1000);
     }

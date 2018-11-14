@@ -1,0 +1,26 @@
+{
+    "male": {
+        "name" : "Đại Phong",
+        "birthDay" : {
+            "d" : 0,
+            "m" : 0,
+            "y" : 1990 
+        }
+    },
+    "female" : {
+        "name" : "Quân kia đéo biết tên",
+        "birthDay" : {
+            "d" : 0,
+            "m" : 0,
+            "y" : 1990 
+        }
+    },
+    "dataDay" : {
+        "day" :  {
+            "d" : 0,
+            "m" : 0,
+            "y" : 1990 
+        }
+    }
+}
+    

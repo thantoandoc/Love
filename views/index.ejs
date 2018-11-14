@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Been Together</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="icon" href="/public/img/love.png">
+</head>
+
+<body>
+  <h1>BEEN TOGETHER</h1>
+  <div class="box">
+    <div class="information">
+
+      <div class="info">
+        <img src="/public/img/man.png" class="avatar">
+        <div class="detail">
+          <p class="name"><%= data.male.name%></p>
+          <div class="bd"><%= ((data.male.birthDay.d > 9) ? data.male.birthDay.d : ('0' +data.male.birthDay.d))  + " - " + ((data.male.birthDay.m > 9) ? data.male.birthDay.m : ('0' +data.male.birthDay.m))+ " - " + data.male.birthDay.y%></div>
+        </div>
+      </div>
+
+      <div class="heart-box">
+        <img src="/public/img/hearts.svg">
+        <div class="first-date"><%= ((data.dataDay.day.d > 9) ? data.dataDay.day.d : '0'+data.dataDay.day.d)  + " - " + ((data.dataDay.day.m > 9) ? data.dataDay.day.m : '0' +data.dataDay.day.m ) + " - " + data.dataDay.day.y%></div>
+      </div>
+
+      <div class="info">
+        <img src="/public//img/female.png" class="avatar">
+        <div class="detail">
+          <p class="name"><%= data.female.name%></p>
+          <div class="bd"><%= ((data.female.birthDay.d > 9) ? data.female.birthDay.d : ('0' +data.female.birthDay.d))  + " - " + ((data.female.birthDay.m > 9) ? data.female.birthDay.m : ('0' +data.female.birthDay.m))+ " - " + data.female.birthDay.y%></div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="time">
+
+      <div class="date"><span>00</span>&nbsp;DAYS</div>
+      <div class="cout-time">
+        <span class="hours">00</span>:<span class="min">00</span>:<span class="second">00</span>
+      </div>
+
+    </div>
+  </div>
+  <script src="/public/js/index.js"></script>
+</body>
+</html>
